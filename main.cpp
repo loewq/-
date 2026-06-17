@@ -64,7 +64,7 @@ void sortstudent(vector<Student>& student){
 }
 
 
-void searchstudent(vector<Student>& student){
+void searchstudent(const vector<Student>& student){
     if (student.empty()) {
         cout << "\nNo student data\n";
         return; 
@@ -86,7 +86,7 @@ void searchstudent(vector<Student>& student){
     return;
 }
 
-void statistics(vector<Student>& student){
+void statistics(const vector<Student>& student){
     if (student.empty()) {
         cout << "\nNo student data\n";
         return; 
@@ -121,7 +121,7 @@ void statistics(vector<Student>& student){
     cout << "|Highest score: "<< highest <<"\t";
     cout << "|Lowest score: "<< lowest <<endl;
     cout << "|Number of passed: "<< pass <<"\t";
-    cout << "|Number of failed: "<< failed;
+    cout << "|Number of failed: "<< failed<< endl;
     cout <<"========================"<<endl;
 }
 
